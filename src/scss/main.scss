@@ -1,0 +1,11 @@
+/* Base */
+@import './base/reset';
+@import './base/vars';
+@import './base/media';
+@import './base/fontsAutoGen';
+@import './base/base';
+@import './base/utils';
+@import './base/sticky-footer';
+
+/* Blocks */
+@import './blocks/*.scss';

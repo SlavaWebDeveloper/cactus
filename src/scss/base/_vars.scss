@@ -1,0 +1,41 @@
+:root {
+  --header-height: 3.5rem;
+  /*========== Colors ==========*/
+
+  --first-color: #83c94a;
+  --first-color-alt: #74b83d;
+  --first-color-light: #a3db76;
+  --title-color: #f9fafa;
+  --text-color: #acafb9;
+  --white-color: #f9fafa;
+  --black-color: #0a0a0b;
+  --body-color: #131416;
+  --container-color: #1d1d20;
+  --shadow-img: 0 0 48px #83c94a66;
+  --gradient-card: linear-gradient(180deg, #141613, #496b2e);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --font-main: "Montserrat", sans-serif;
+  --biggest-font-size: 2.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  
+}
+
+.dark {
+  --page-bg: #252526;
+  --text-color: #fff;
+}

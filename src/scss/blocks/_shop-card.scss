@@ -1,0 +1,56 @@
+.shop-card {
+  position: relative;
+  background-color: var(--gradient-card);
+  padding: 5.75rem 0.75rem 1.25rem 0.75rem;
+  border: 2px solid var(--first-color-light);
+  border-radius: 1rem;
+
+  @include hover {
+    .shop-card__img {
+      transform: translateY(-.5rem);
+    }
+  }
+
+  // .shop-card_price
+
+  &_price {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+  }
+
+  // .shop-card__img
+
+  &__img {
+    position: absolute;
+    top: -4.5rem;
+    left: 0;
+    right: 0;
+    width: 130px;
+    margin: 0 auto;
+    transition: transform 0.4s;
+  }
+
+  // .shop-card__title
+
+  &__title {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 0.5rem;
+  }
+
+  // .shop-card__button
+
+  &__button {
+    position: absolute;
+    right: 0.75rem;
+    bottom: 0.75rem;
+    outline: none;
+    border: none;
+    background-color: var(--white-color);
+    padding: 6px;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    display: grid;
+    cursor: pointer;
+  }
+}

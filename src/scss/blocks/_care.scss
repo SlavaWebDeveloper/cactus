@@ -11,7 +11,7 @@
 
   &__img {
     width: 270px;
-    filter: drop-shadow(--shadow-img);
+    filter: drop-shadow(var(--shadow-img));
     justify-self: center;
   }
 

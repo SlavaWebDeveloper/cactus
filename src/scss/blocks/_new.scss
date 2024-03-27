@@ -1,15 +1,35 @@
 .new {
-
   // .new__container
 
   &__container {
     row-gap: 7.5rem;
+
+    @include table-above {
+      grid-template-columns: 400px;
+      justify-content: center;
+    }
+
+    @include laptop-above {
+      grid-template-columns: 412px 490px;
+      align-items: center;
+      column-gap: 7.5rem;
+    }
   }
 
   // .new__data
 
   &__data {
     text-align: center;
+
+    @include laptop-above {
+      text-align: initial;
+    }
+
+    .section__title {
+      @include laptop-above {
+        text-align: initial;
+      }
+    }
   }
 
   // .new__description
@@ -21,5 +41,14 @@
 
   &__content {
     row-gap: 6rem;
+
+    @include table-xs-above {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 4rem;
+    }
+
+    @include laptop-above {
+      column-gap: 8.5rem;
+    }
   }
 }

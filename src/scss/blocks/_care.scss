@@ -1,10 +1,21 @@
 .care {
-
   // .care__container
 
   &__container {
     padding-top: 2rem;
     row-gap: 2rem;
+
+    @include table-above {
+      grid-template-columns: 400px;
+      justify-content: center;
+    }
+    
+    @include laptop-above {
+      grid-template-columns: 480px 385px;
+      align-items: center;
+      column-gap: 8rem;
+      padding-top: 3rem;
+    }
   }
 
   // .care__img
@@ -13,6 +24,10 @@
     width: 270px;
     filter: drop-shadow(var(--shadow-img));
     justify-self: center;
+
+    @include laptop-above {
+      width: 480px;
+    }
   }
 
   // .care__list
@@ -20,6 +35,10 @@
   &__list {
     display: grid;
     row-gap: 1rem;
+
+    @include laptop-above {
+      row-gap: 1.5rem;
+    }
   }
 
   // .care__item

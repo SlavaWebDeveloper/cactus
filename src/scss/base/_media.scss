@@ -1,5 +1,8 @@
 /*========== breakpoint ==========*/
 $laptop: 1150px;
+$table-xs: 768px;
+$table: 576px;
+$mobile: 320px;
 
 @mixin laptop {
   @media screen and (max-width: $laptop) {
@@ -9,6 +12,42 @@ $laptop: 1150px;
 
 @mixin laptop-above {
   @media screen and (min-width: $laptop) {
+    @content;
+  }  
+}
+
+@mixin table-xs {
+  @media screen and (max-width: $table-xs) {
+    @content;
+  }
+}
+
+@mixin table-xs-above {
+  @media screen and (min-width: $table-xs) {
+    @content;
+  }  
+}
+
+@mixin table {
+  @media screen and (max-width: $table) {
+    @content;
+  }
+}
+
+@mixin table-above {
+  @media screen and (min-width: $table) {
+    @content;
+  }  
+}
+
+@mixin mobile {
+  @media screen and (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin mobile-above {
+  @media screen and (min-width: $mobile) {
     @content;
   }  
 }

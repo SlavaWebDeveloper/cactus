@@ -1,10 +1,28 @@
 .shop {
-
   // .shop__container
-
   &__container {
     padding-top: 6.5rem;
     grid-template-columns: repeat(2, 1fr);
     gap: 6rem 1.5rem;
+
+    @include mobile {
+      grid-template-columns: 160px;
+      justify-content: center;
+    }
+
+    @include table-above {
+      grid-template-columns: repeat(2, 160px);
+      justify-content: center;
+    }
+
+    @include table-xs-above {
+      grid-template-columns: repeat(3, 160px);
+    }
+
+    @include laptop-above {
+      grid-template-columns: repeat(3, 240px);
+      gap: 8.5rem 4rem;
+      padding-top: 7.5rem;
+    }
   }
 }

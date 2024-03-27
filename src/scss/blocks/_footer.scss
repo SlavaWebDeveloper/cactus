@@ -5,6 +5,12 @@
 
   &__container {
     row-gap: 4rem;
+    justify-content: center;
+
+    @include table-xs-above {
+      grid-template-columns: repeat(2, max-content);
+      justify-content: space-between;
+    }
   }
 
   // .footer__logo
@@ -18,10 +24,18 @@
     font-weight: var(--font-semi-bold);
     margin-bottom: 0.75rem;
 
+    @include laptop-above {
+      margin-bottom: 1.5rem;
+    }
+
     i {
       color: var(--first-color);
       font-size: 1.5rem;
       font-weight: initial;
+
+      @include laptop-above {
+        font-size: 2rem;
+      }
     }
   }
 
@@ -35,6 +49,19 @@
   &__content {
     grid-template-columns: repeat(2, max-content);
     gap: 4rem 3rem;
+    justify-content: center;
+
+    @include mobile {
+      grid-template-columns: max-content;
+    }
+    
+    @include table-above {
+      grid-template-columns: repeat(3, max-content);
+    }
+
+    @include laptop-above {
+      column-gap: 5.5rem;
+    }
   }
 
   // .footer__title
@@ -42,6 +69,11 @@
   &__title {
     font-size: var(--normal-font-size);
     margin-bottom: 1rem;
+
+    @include laptop-above {
+      font-size: var(--h3-font-size);
+      margin-bottom: 1.5rem;
+    }
   }
 
   // .footer__links
@@ -67,6 +99,10 @@
   &__socia1 {
     display: flex;
     column-gap: 0.75rem;
+
+    @include laptop-above {
+      column-gap: 1rem;
+    }
   }
 
   // .footer__socia1-link
@@ -88,5 +124,9 @@
     margin-top: 6rem;
     text-align: center;
     font-size: var(--normal-font-size);
+
+    @include laptop-above {
+      margin-top: 7.5rem;
+    }
   }
 }

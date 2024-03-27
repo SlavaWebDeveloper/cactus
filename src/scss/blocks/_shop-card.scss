@@ -1,9 +1,14 @@
 .shop-card {
   position: relative;
-  background-color: var(--gradient-card);
+  background: var(--gradient-card);
   padding: 5.75rem 0.75rem 1.25rem 0.75rem;
   border: 2px solid var(--first-color-light);
   border-radius: 1rem;
+
+  @include laptop-above {
+    padding: 10.5rem 1.5rem 2rem;
+    border-radius: 1.5rem;
+  }
 
   @include hover {
     .shop-card__img {
@@ -16,6 +21,10 @@
   &_price {
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
+
+    @include laptop-above {
+      font-size: var(--h2-font-size);
+    }
   }
 
   // .shop-card__img
@@ -28,6 +37,11 @@
     width: 130px;
     margin: 0 auto;
     transition: transform 0.4s;
+
+    @include laptop-above {
+      width: 210px;
+      top: -5.5rem;
+    }
   }
 
   // .shop-card__title
@@ -36,6 +50,10 @@
     font-size: var(--small-font-size);
     font-weight: var(--font-semi-bold);
     margin-bottom: 0.5rem;
+
+    @include laptop-above {
+      font-size: var(--h3-font-size);
+    }
   }
 
   // .shop-card__button
@@ -52,5 +70,11 @@
     font-size: 1.25rem;
     display: grid;
     cursor: pointer;
+
+    @include laptop-above {
+      right: 1.5rem;
+      bottom: 2rem;
+      font-size: 1.5rem;
+    }
   }
 }

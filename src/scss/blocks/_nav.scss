@@ -5,6 +5,10 @@
   justify-content: space-between;
   align-items: center;
 
+  @include laptop-above {
+    height: calc(var(--header-height) + 2rem);
+  }
+
   &__logo,
   &__close,
   &__actions,
@@ -19,21 +23,35 @@
     font-weight: var(--font-semi-bold);
     column-gap: 0.25rem;
     align-items: center;
+
+    @include laptop-above {
+      font-size: 1.5rem;
+    }
   }
 
   // .nav__menu
 
   &__menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    background-color: #0c0d1333;
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    width: 80%;
-    height: 100%;
-    padding: 6rem 3rem 0;
-    transition: right 0.4s;
+    @include laptop {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      background-color: #0c0d1333;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      width: 80%;
+      height: 100%;
+      padding: 6rem 3rem 0;
+      transition: right 0.4s;
+    }
+
+    @include table-xs-above {
+      width: 50%;
+    }
+
+    @include laptop-above {
+      width: initial;
+    }
   }
 
   // .nav__list
@@ -42,6 +60,11 @@
     display: flex;
     flex-direction: column;
     row-gap: 3rem;
+
+    @include laptop-above {
+      flex-direction: row;
+      column-gap: 3.5rem;
+    }
   }
 
   // .nav__item
@@ -66,8 +89,12 @@
   &__close {
     position: absolute;
     top: 1.15rem;
-    right: 1.15rem;
+    right: 1.5rem;
     font-size: 1.25rem;
+
+    @include laptop-above {
+      display: none;
+    }
   }
 
   // .nav__actions
@@ -76,11 +103,19 @@
     font-size: 1.25rem;
     column-gap: 0.5rem;
     align-items: center;
+
+    @include laptop-above {
+      font-size: 1.5rem;
+      column-gap: 1em;
+    }
   }
 
   // .nav__toggle
 
   &__toggle {
+    @include laptop-above {
+      display: none;
+    }
   }
 
   .show-menu {

@@ -9,10 +9,14 @@
   padding: 6px;
   font-size: 1.25rem;
   z-index: var(--z-tooltip);
-  transition: bottom .4s, transform .4s;
+  transition: bottom 0.4s, transform 0.4s;
+
+  @include laptop-above {
+    right: 3rem;
+  }
 
   @include hover {
-    transform:  translateY(-0.5rem);
+    transform: translateY(-0.5rem);
   }
 }
 

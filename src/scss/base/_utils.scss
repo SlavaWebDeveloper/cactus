@@ -4,8 +4,12 @@
   max-width: 1120px;
   margin-inline: 1.5rem;
   
+  @include mobile {
+    margin-inline: 1rem;
+  }
+
   @include laptop-above {
-    margin: 0 auto;
+    margin-inline: auto;
   }
 }
 
@@ -16,6 +20,10 @@
 
 .section {
   padding-block: 5rem 1rem;
+
+  @include laptop-above {
+    padding-block: 7rem 2rem;
+  }
 }
 
 .section__title {
@@ -23,6 +31,10 @@
   font-weight: var(--font-bold);
   text-align: center;
   margin-bottom: 1rem;
+
+  @include laptop-above {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .main {

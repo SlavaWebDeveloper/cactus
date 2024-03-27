@@ -6,6 +6,12 @@
   border: 2px solid var(--first-color-light);
   border-radius: 1.5rem;
 
+  &:nth-child(even) {
+    @include table-xs-above {
+      transform: translateY(10rem);
+    }
+  }
+  
   &:nth-child(odd) {
     rotate: -5deg;
   }
@@ -38,5 +44,9 @@
   &__title {
     font-size: var(--h2-font-size);
     text-align: center;
+
+    @include laptop-above {
+      font-size: var(--h3-font-size);
+    }
   }
 }

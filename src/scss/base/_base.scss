@@ -14,3 +14,16 @@ h1, h2, h3, h4 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: #252528;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3d3d42;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hwb(240 24% 74%);
+}

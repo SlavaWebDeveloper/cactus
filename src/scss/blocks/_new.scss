@@ -1,0 +1,25 @@
+.new {
+
+  // .new__container
+
+  &__container {
+    row-gap: 7.5rem;
+  }
+
+  // .new__data
+
+  &__data {
+    text-align: center;
+  }
+
+  // .new__description
+
+  &__description {
+  }
+
+  // .new__content
+
+  &__content {
+    row-gap: 6rem;
+  }
+}

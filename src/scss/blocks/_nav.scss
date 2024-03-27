@@ -24,18 +24,16 @@
   // .nav__menu
 
   &__menu {
-    @include laptop {
-      position: fixed;
-      top: 0;
-      right: -100%;
-      background-color: #0c0d1333;
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      width: 80%;
-      height: 100%;
-      padding: 6rem 3rem 0;
-      transition: right 0.4s;
-    }
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: #0c0d1333;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    width: 80%;
+    height: 100%;
+    padding: 6rem 3rem 0;
+    transition: right 0.4s;
   }
 
   // .nav__list

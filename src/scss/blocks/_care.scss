@@ -1,0 +1,37 @@
+.care {
+
+  // .care__container
+
+  &__container {
+    padding-top: 2rem;
+    row-gap: 2rem;
+  }
+
+  // .care__img
+
+  &__img {
+    width: 270px;
+    filter: drop-shadow(--shadow-img);
+    justify-self: center;
+  }
+
+  // .care__list
+
+  &__list {
+    display: grid;
+    row-gap: 1rem;
+  }
+
+  // .care__item
+
+  &__item {
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: flex-start;
+
+    i {
+      font-size: 1rem;
+      color: var(--first-color);
+    }
+  }
+}
